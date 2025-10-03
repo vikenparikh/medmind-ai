@@ -1,0 +1,127 @@
+# MedMind AI - Clinical Intelligence Platform
+# Medical AI and Healthcare Technology Dependencies
+# Developed by Viken Parikh
+
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Medical AI & ML Libraries
+torch==2.1.0
+torchvision==0.16.0
+transformers==4.35.0
+sentence-transformers==2.2.2
+scikit-learn==1.3.2
+xgboost==2.0.2
+
+# Medical NLP & Text Processing
+spacy==3.7.2
+nltk==3.8.1
+textblob==0.17.1
+medical-nlp==0.1.0
+
+# Medical Data Processing
+pandas==2.1.3
+numpy==1.24.3
+scipy==1.11.4
+scikit-image==0.22.0
+
+# Medical Knowledge Graphs
+neo4j==5.14.1
+networkx==3.2.1
+stellargraph==1.2.1
+
+# Medical Vector Databases
+chromadb==0.4.18
+faiss-cpu==1.7.4
+pinecone-client==2.2.4
+
+# Medical AI Frameworks
+langchain==0.0.340
+langchain-community==0.0.10
+langchain-openai==0.0.2
+crewai==0.1.0
+llama-index==0.9.0
+llama-index-core==0.9.0
+
+# Medical Computer Vision
+opencv-python==4.8.1.78
+pillow==10.1.0
+albumentations==1.3.1
+
+# Medical Audio Processing
+librosa==0.10.1
+pyaudio==0.2.11
+speechrecognition==3.10.0
+pydub==0.25.1
+
+# Medical Document Processing
+PyPDF2==3.0.1
+python-docx==1.1.0
+python-pptx==0.6.23
+openpyxl==3.1.2
+xlsxwriter==3.1.9
+
+# Medical Web Scraping & Data Collection
+beautifulsoup4==4.12.2
+requests==2.31.0
+selenium==4.15.2
+scrapy==2.11.0
+
+# Medical Analytics & Visualization
+matplotlib==3.8.2
+seaborn==0.13.0
+plotly==5.17.0
+
+# Medical MLOps
+mlflow==2.8.1
+wandb==0.16.0
+tensorboard==2.15.1
+
+# Medical Time Series & Forecasting
+prophet==1.1.4
+statsmodels==0.14.0
+arch==6.2.0
+
+# Medical Security & Authentication
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.2
+
+# Medical Monitoring & Logging
+prometheus-client==0.19.0
+structlog==23.2.0
+
+# Medical Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+pytest-cov==4.1.0
+
+# Medical Development Tools
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+jupyter==1.0.0
+ipykernel==6.27.1
+
+# Medical Utilities
+python-dotenv==1.0.0
+pyyaml==6.0.1
+click==8.1.7
+rich==13.7.0
+tqdm==4.66.1
+
+# Medical Database
+sqlalchemy==2.0.23
+alembic==1.13.1
+
+# Medical HTTP & API
+httpx==0.25.2
+websockets==12.0
+
+# Medical Environment
+python-multipart==0.0.6
+jinja2==3.1.2
