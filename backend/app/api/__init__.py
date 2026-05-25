@@ -1,1 +1,1 @@
-# NeuralVerse AI API Package
+# MedMind AI API Package

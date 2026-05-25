@@ -1,1 +1,1 @@
-# NeuralVerse AI App Package
+# MedMind AI App Package

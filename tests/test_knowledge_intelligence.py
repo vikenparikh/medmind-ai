@@ -1,5 +1,5 @@
 """
-MindForge AI - Knowledge Intelligence Test Suite
+MedMind AI - Knowledge Intelligence Test Suite
 Comprehensive testing for personal knowledge management features
 """
 
@@ -12,7 +12,7 @@ from datetime import datetime
 client = TestClient(app)
 
 class TestKnowledgeIntelligence:
-    """Comprehensive test suite for MindForge AI knowledge features"""
+    """Comprehensive test suite for MedMind AI knowledge features"""
 
     def setup_method(self):
         """Setup for each test method"""

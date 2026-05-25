@@ -1,5 +1,5 @@
 """
-NeuralVerse AI - Comprehensive Test Suite
+MedMind AI - Comprehensive Test Suite
 Tests for the ultimate AI development platform
 """
 
@@ -21,8 +21,8 @@ from unittest.mock import Mock, patch
 # Test client
 client = TestClient(app)
 
-class TestNeuralVerseAI:
-    """Comprehensive test suite for NeuralVerse AI platform"""
+class TestMedMindAI:
+    """Comprehensive test suite for MedMind AI platform"""
     
     def setup_method(self):
         """Setup for each test method"""
@@ -50,7 +50,7 @@ class TestNeuralVerseAI:
         
         data = response.json()
         assert "message" in data
-        assert "Welcome to the NeuralVerse AI Backend!" in data["message"]
+        assert "Welcome to the MedMind AI Backend!" in data["message"]
 
     def test_health_check(self):
         """Test the health check endpoint"""
@@ -59,7 +59,7 @@ class TestNeuralVerseAI:
         
         data = response.json()
         assert data["status"] == "ok"
-        assert "NeuralVerse AI is running smoothly" in data["message"]
+        assert "MedMind AI is running smoothly" in data["message"]
 
     def test_text_processing(self):
         """Test AI text processing endpoint"""

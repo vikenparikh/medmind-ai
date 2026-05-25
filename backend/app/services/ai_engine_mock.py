@@ -1,5 +1,5 @@
 """
-NeuralVerse AI - Mock AI Engine for Testing
+MedMind AI - Mock AI Engine for Testing
 Comprehensive AI services implementation with mock functionality for demonstration
 """
 
@@ -15,7 +15,7 @@ import io
 
 logger = logging.getLogger(__name__)
 
-class NeuralVerseAIMockEngine:
+class MedMindAIMockEngine:
     """Mock AI Engine for testing and demonstration purposes"""
     
     def __init__(self):
@@ -26,7 +26,7 @@ class NeuralVerseAIMockEngine:
         }
         self.agents = {}
         self.indices = {}
-        logger.info("NeuralVerse AI Mock Engine initialized successfully")
+        logger.info("MedMind AI Mock Engine initialized successfully")
     
     # ==================== CREWAI MULTI-AGENT SYSTEM ====================
     
@@ -204,7 +204,7 @@ class NeuralVerseAIMockEngine:
             sentiment_result = {"label": "POSITIVE", "score": 0.85}
             
             entities = [
-                {"text": "NeuralVerse AI", "label": "ORG", "confidence": 0.95},
+                {"text": "MedMind AI", "label": "ORG", "confidence": 0.95},
                 {"text": "Viken Parikh", "label": "PERSON", "confidence": 0.92}
             ]
             
@@ -270,7 +270,7 @@ class NeuralVerseAIMockEngine:
                 ]
             }
             
-            extracted_text = "NeuralVerse AI - The Ultimate AI Development Platform"
+            extracted_text = "MedMind AI - The Ultimate AI Development Platform"
             
             enhanced = {
                 "brightness_adjusted": True,
@@ -354,7 +354,7 @@ if __name__ == "__main__":
             await asyncio.sleep(0.06)
             
             if task == "speech_recognition":
-                transcribed_text = "Welcome to NeuralVerse AI, the ultimate AI development platform"
+                transcribed_text = "Welcome to MedMind AI, the ultimate AI development platform"
                 
                 return {
                     "task": task,
@@ -495,4 +495,4 @@ if __name__ == "__main__":
         }
 
 # Global Mock AI Engine instance
-ai_engine_mock = NeuralVerseAIMockEngine()
+ai_engine_mock = MedMindAIMockEngine()

@@ -1,5 +1,5 @@
 """
-NeuralVerse AI - API Endpoints
+MedMind AI - API Endpoints
 Comprehensive REST API for all AI features and services
 """
 
@@ -54,7 +54,7 @@ async def health_check():
 async def system_status():
     """Detailed system status"""
     return {
-        "platform": "NeuralVerse AI",
+        "platform": "MedMind AI",
         "version": settings.APP_VERSION,
         "uptime": "24h 15m 30s",
         "active_users": 42,

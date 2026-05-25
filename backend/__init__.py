@@ -1,1 +1,1 @@
-# NeuralVerse AI Backend Package
+# MedMind AI Backend Package

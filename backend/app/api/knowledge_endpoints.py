@@ -1,5 +1,5 @@
 """
-MindForge AI - Knowledge Intelligence API Endpoints
+MedMind AI - Knowledge Intelligence API Endpoints
 Personal Knowledge Management and Intelligence Features
 """
 

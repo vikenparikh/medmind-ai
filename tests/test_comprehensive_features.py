@@ -1,5 +1,5 @@
 """
-NeuralVerse AI - Comprehensive Feature Tests
+MedMind AI - Comprehensive Feature Tests
 Tests for all AI technologies and features
 """
 
@@ -36,8 +36,8 @@ except ImportError:
 # Test client
 client = TestClient(app)
 
-class TestNeuralVerseAIComprehensive:
-    """Comprehensive test suite for all NeuralVerse AI features"""
+class TestMedMindAIComprehensive:
+    """Comprehensive test suite for all MedMind AI features"""
     
     def setup_method(self):
         """Setup for each test method"""
@@ -47,10 +47,10 @@ class TestNeuralVerseAIComprehensive:
         self.test_index_id = "index_001"
         
         # Sample data for testing
-        self.sample_text = "NeuralVerse AI is revolutionizing artificial intelligence development with cutting-edge technologies."
+        self.sample_text = "MedMind AI is revolutionizing artificial intelligence development with cutting-edge technologies."
         self.sample_data = [1.0, 2.0, 3.0, 4.0, 5.0]
         self.sample_documents = [
-            "NeuralVerse AI integrates multiple AI technologies",
+            "MedMind AI integrates multiple AI technologies",
             "CrewAI enables multi-agent collaboration",
             "LlamaIndex provides advanced vector search capabilities"
         ]
@@ -63,7 +63,7 @@ class TestNeuralVerseAIComprehensive:
         assert response.status_code == 200
         
         data = response.json()
-        assert data["message"] == "Welcome to NeuralVerse AI - The Ultimate AI Development Platform"
+        assert data["message"] == "Welcome to MedMind AI - The Ultimate AI Development Platform"
         assert data["version"] == settings.APP_VERSION
         assert data["status"] == "operational"
         assert "features" in data
@@ -94,7 +94,7 @@ class TestNeuralVerseAIComprehensive:
         assert response.status_code == 200
         
         data = response.json()
-        assert data["platform"] == "NeuralVerse AI"
+        assert data["platform"] == "MedMind AI"
         assert data["version"] == settings.APP_VERSION
         assert "services_status" in data
         assert "performance" in data
@@ -342,7 +342,7 @@ class TestNeuralVerseAIComprehensive:
         """Test vector search with LlamaIndex"""
         query_request = {
             "index_id": self.test_index_id,
-            "query": "What is NeuralVerse AI?",
+            "query": "What is MedMind AI?",
             "top_k": 3,
             "similarity_threshold": 0.7
         }

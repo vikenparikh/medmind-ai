@@ -1,5 +1,5 @@
 """
-NeuralVerse AI - Core AI Engine
+MedMind AI - Core AI Engine
 Comprehensive AI services implementation with all cutting-edge technologies
 """
 
@@ -60,7 +60,7 @@ import PyPDF2
 
 logger = logging.getLogger(__name__)
 
-class NeuralVerseAIEngine:
+class MedMindAIEngine:
     """Comprehensive AI Engine implementing all cutting-edge technologies"""
     
     def __init__(self):
@@ -104,7 +104,7 @@ class NeuralVerseAIEngine:
             self.audio_recognizer = sr.Recognizer()
             
             self.initialized = True
-            logger.info("NeuralVerse AI Engine initialized successfully")
+            logger.info("MedMind AI Engine initialized successfully")
             
         except Exception as e:
             logger.error(f"Failed to initialize AI Engine: {e}")
@@ -689,7 +689,7 @@ class NeuralVerseAIEngine:
     
     async def _extract_text_from_image(self, image: np.ndarray) -> str:
         """Extract text from image using OCR (simulated)"""
-        return "NeuralVerse AI - The Ultimate AI Development Platform"
+        return "MedMind AI - The Ultimate AI Development Platform"
     
     async def _enhance_image(self, image: np.ndarray) -> Dict[str, Any]:
         """Enhance image quality (simulated)"""
@@ -702,7 +702,7 @@ class NeuralVerseAIEngine:
     
     async def _recognize_speech(self, audio_data: bytes) -> str:
         """Recognize speech from audio (simulated)"""
-        return "Welcome to NeuralVerse AI, the ultimate AI development platform"
+        return "Welcome to MedMind AI, the ultimate AI development platform"
     
     async def _extract_audio_features(self, audio: np.ndarray, sr: int) -> Dict[str, Any]:
         """Extract audio features using librosa"""
@@ -728,4 +728,4 @@ class NeuralVerseAIEngine:
         ]
 
 # Global AI Engine instance
-ai_engine = NeuralVerseAIEngine()
+ai_engine = MedMindAIEngine()

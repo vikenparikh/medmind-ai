@@ -1,5 +1,5 @@
 """
-NeuralVerse AI - Configuration Management
+MedMind AI - Configuration Management
 Central configuration for all AI services and features
 """
 
@@ -11,10 +11,10 @@ class Settings(BaseSettings):
     """Application settings and configuration"""
     
     # Application
-    APP_NAME: str = "NeuralVerse AI"
+    APP_NAME: str = "MedMind AI"
     APP_VERSION: str = "2.0.0"
     DEBUG: bool = True
-    SECRET_KEY: str = "neuralverse-ai-secret-key-2024"
+    SECRET_KEY: str = "medmind-ai-secret-key-2024"
     
     # API Configuration
     API_V1_STR: str = "/api/v1"
@@ -22,9 +22,9 @@ class Settings(BaseSettings):
     CORS_ORIGINS: List[str] = ["*"]
     
     # Database
-    DATABASE_URL: str = "sqlite:///./neuralverse.db"
+    DATABASE_URL: str = "sqlite:///./medmind.db"
     REDIS_URL: str = "redis://localhost:6379"
-    MONGODB_URL: str = "mongodb://localhost:27017/neuralverse"
+    MONGODB_URL: str = "mongodb://localhost:27017/medmind"
     
     # AI/ML Services
     OPENAI_API_KEY: Optional[str] = None

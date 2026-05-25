@@ -1,1 +1,1 @@
-# NeuralVerse AI Core Package
+# MedMind AI Core Package

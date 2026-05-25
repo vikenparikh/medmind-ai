@@ -1,1 +1,1 @@
-# NeuralVerse AI Services Package
+# MedMind AI Services Package

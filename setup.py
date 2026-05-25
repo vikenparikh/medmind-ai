@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-NeuralVerse AI - Setup Script
+MedMind AI - Setup Script
 The Ultimate AI Development Platform
 """
 
@@ -13,7 +13,7 @@ from pathlib import Path
 def print_header():
     """Print setup header"""
     print("="*80)
-    print("🧠 NeuralVerse AI - Setup Script")
+    print("🧠 MedMind AI - Setup Script")
     print("   The Ultimate AI Development Platform")
     print("   Built by Viken Parikh")
     print("="*80)
@@ -77,8 +77,8 @@ def create_env_file():
         print("✅ .env file already exists")
         return True
     
-    env_content = """# NeuralVerse AI Configuration
-APP_NAME=NeuralVerse AI
+    env_content = """# MedMind AI Configuration
+APP_NAME=MedMind AI
 APP_VERSION=2.0.0
 DEBUG=true
 LOG_LEVEL=INFO
@@ -95,7 +95,7 @@ CORS_ORIGINS=*
 ALLOWED_HOSTS=*
 
 # Database Configuration
-DATABASE_URL=sqlite:///./neuralverse.db
+DATABASE_URL=sqlite:///./medmind.db
 
 # Redis Configuration (optional)
 REDIS_URL=redis://localhost:6379
@@ -133,7 +133,7 @@ def run_initial_tests():
         # Run a quick test
         test_result = subprocess.run([
             sys.executable, "-m", "pytest", 
-            "tests/test_neuralverse_ai.py::TestNeuralVerseAI::test_platform_root",
+            "tests/test_medmind_ai.py::TestMedMindAI::test_platform_root",
             "-v", "--tb=short"
         ], capture_output=True, text=True, timeout=30)
         
@@ -153,11 +153,11 @@ def run_initial_tests():
 def show_completion_message():
     """Show setup completion message"""
     print("\n" + "="*80)
-    print("🎉 NeuralVerse AI Setup Complete!")
+    print("🎉 MedMind AI Setup Complete!")
     print("="*80)
     print()
     print("🚀 Quick Start:")
-    print("   python start_neuralverse.py")
+    print("   python start_medmind.py")
     print()
     print("🧪 Run Tests:")
     print("   python test_runner.py")

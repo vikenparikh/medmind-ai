@@ -1,5 +1,5 @@
 """
-NeuralVerse AI - Unified AI Platform Tests
+MedMind AI - Unified AI Platform Tests
 Comprehensive tests for the unified AI development platform
 """
 
@@ -23,8 +23,8 @@ from unittest.mock import Mock, patch
 # Test client
 client = TestClient(app)
 
-class TestNeuralVerseAI:
-    """Comprehensive test suite for NeuralVerse AI unified platform"""
+class TestMedMindAI:
+    """Comprehensive test suite for MedMind AI unified platform"""
     
     def setup_method(self):
         """Setup for each test method"""
@@ -33,10 +33,10 @@ class TestNeuralVerseAI:
         self.test_index_id = "index_001"
         
         # Sample data for testing
-        self.sample_text = "NeuralVerse AI is revolutionizing artificial intelligence development with cutting-edge technologies."
+        self.sample_text = "MedMind AI is revolutionizing artificial intelligence development with cutting-edge technologies."
         self.sample_data = [1.0, 2.0, 3.0, 4.0, 5.0]
         self.sample_documents = [
-            "NeuralVerse AI integrates multiple AI technologies seamlessly",
+            "MedMind AI integrates multiple AI technologies seamlessly",
             "Multi-agent systems enable collaborative AI development",
             "Vector search provides advanced document retrieval capabilities"
         ]
@@ -49,7 +49,7 @@ class TestNeuralVerseAI:
         assert response.status_code == 200
         
         data = response.json()
-        assert data["message"] == "Welcome to MindForge AI - Personal Knowledge Intelligence Platform"
+        assert data["message"] == "Welcome to MedMind AI - Personal Knowledge Intelligence Platform"
         assert data["version"] == settings.APP_VERSION
         assert data["status"] == "operational"
         assert "features" in data
@@ -80,7 +80,7 @@ class TestNeuralVerseAI:
         assert response.status_code == 200
         
         data = response.json()
-        assert data["platform"] == "NeuralVerse AI"
+        assert data["platform"] == "MedMind AI"
         assert data["version"] == settings.APP_VERSION
         assert "services_status" in data
         assert "performance" in data
@@ -98,7 +98,7 @@ class TestNeuralVerseAI:
     def test_crew_creation(self):
         """Test CrewAI multi-agent system creation"""
         crew_config = {
-            "name": "NeuralVerse Research Crew",
+            "name": "MedMind Research Crew",
             "description": "Advanced AI research and development crew",
             "agents": [
                 {
@@ -147,7 +147,7 @@ class TestNeuralVerseAI:
     def test_vector_index_creation(self):
         """Test LlamaIndex vector search index creation"""
         index_config = {
-            "name": "NeuralVerse Knowledge Base",
+            "name": "MedMind Knowledge Base",
             "description": "Comprehensive knowledge base for AI technologies",
             "index_type": "vector",
             "embedding_model": "text-embedding-ada-002",
@@ -168,7 +168,7 @@ class TestNeuralVerseAI:
         """Test vector search functionality"""
         query_request = {
             "index_id": self.test_index_id,
-            "query": "What are the key features of NeuralVerse AI?",
+            "query": "What are the key features of MedMind AI?",
             "top_k": 5,
             "similarity_threshold": 0.7
         }
@@ -182,7 +182,7 @@ class TestNeuralVerseAI:
     def test_model_creation(self):
         """Test ML model creation"""
         model_data = {
-            "name": "NeuralVerse Classifier",
+            "name": "MedMind Classifier",
             "description": "Advanced classification model for AI applications",
             "model_type": "classification",
             "framework": "pytorch",
@@ -210,7 +210,7 @@ class TestNeuralVerseAI:
         training_data = {
             "model_id": self.test_model_id,
             "dataset_config": {
-                "dataset_path": "/data/neuralverse_training.csv",
+                "dataset_path": "/data/medmind_training.csv",
                 "features": ["feature1", "feature2", "feature3"],
                 "target": "label"
             },
@@ -389,7 +389,7 @@ class TestNeuralVerseAI:
             "time_range": "30d",
             "filters": {
                 "category": "AI",
-                "platform": "NeuralVerse"
+                "platform": "MedMind"
             }
         }
         
@@ -407,7 +407,7 @@ class TestNeuralVerseAI:
     def test_document_creation(self):
         """Test document creation and processing"""
         document_data = {
-            "title": "NeuralVerse AI Platform Overview",
+            "title": "MedMind AI Platform Overview",
             "content": self.sample_text,
             "document_type": "technical",
             "language": "en"
@@ -479,7 +479,7 @@ class TestNeuralVerseAI:
         # 1. Create a document
         document_data = {
             "title": "AI Integration Test",
-            "content": "This document tests the full AI pipeline integration in NeuralVerse AI.",
+            "content": "This document tests the full AI pipeline integration in MedMind AI.",
             "document_type": "test",
             "language": "en"
         }

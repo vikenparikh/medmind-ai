@@ -1,5 +1,5 @@
 """
-NeuralVerse AI - Main FastAPI Application
+MedMind AI - Main FastAPI Application
 Comprehensive AI Development Platform Backend
 """
 
@@ -56,7 +56,7 @@ manager = ConnectionManager()
 async def lifespan(app: FastAPI):
     """Application lifespan manager"""
     # Startup
-    logger.info("Starting NeuralVerse AI Backend...")
+    logger.info("Starting MedMind AI Backend...")
     logger.info(f"Version: {settings.APP_VERSION}")
     logger.info(f"Debug Mode: {settings.DEBUG}")
     
@@ -73,13 +73,13 @@ async def lifespan(app: FastAPI):
     yield
     
     # Shutdown
-    logger.info("Shutting down NeuralVerse AI Backend...")
+    logger.info("Shutting down MedMind AI Backend...")
 
 # Initialize FastAPI app with lifespan
 app = FastAPI(
-    title="MindForge AI",
+    title="MedMind AI",
     description="""
-    ## MindForge AI - Personal Knowledge Intelligence Platform
+    ## MedMind AI - Personal Knowledge Intelligence Platform
     
     Transform your scattered knowledge into an intelligent, connected ecosystem that learns, adapts, and grows with you.
     
@@ -198,7 +198,7 @@ async def system_status():
         from .services.ai_engine_mock import ai_engine_mock as ai_engine
         
         return {
-            "platform": "NeuralVerse AI",
+            "platform": "MedMind AI",
             "version": settings.APP_VERSION,
             "uptime": "24h 15m 30s",
             "timestamp": datetime.utcnow().isoformat(),
@@ -314,7 +314,7 @@ async def websocket_endpoint_legacy(websocket: WebSocket):
     try:
         while True:
             data = await websocket.receive_text()
-            await websocket.send_text(f"NeuralVerse AI: {data}")
+            await websocket.send_text(f"MedMind AI: {data}")
     except WebSocketDisconnect:
         pass
 
@@ -349,7 +349,7 @@ async def internal_error_handler(request, exc):
 if __name__ == "__main__":
     import uvicorn
     
-    logger.info("Starting NeuralVerse AI Backend Server...")
+    logger.info("Starting MedMind AI Backend Server...")
     uvicorn.run(
         "backend.app.main:app",
         host="0.0.0.0",

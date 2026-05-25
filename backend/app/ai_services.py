@@ -1,5 +1,5 @@
 """
-NeuralVerse AI - Comprehensive AI Services
+MedMind AI - Comprehensive AI Services
 Implements all AI features and capabilities
 """
 
@@ -15,12 +15,12 @@ import asyncio
 # Configure logging
 logger = logging.getLogger(__name__)
 
-class NeuralVerseAIServices:
+class MedMindAIServices:
     """Comprehensive AI services implementing all features"""
     
     def __init__(self):
         self.services_initialized = True
-        logger.info("NeuralVerse AI Services initialized successfully")
+        logger.info("MedMind AI Services initialized successfully")
     
     # ==================== DOCUMENT INTELLIGENCE ====================
     
@@ -111,7 +111,7 @@ class NeuralVerseAIServices:
     async def _named_entity_recognition(self, text: str) -> Dict[str, Any]:
         """Named Entity Recognition"""
         entities = [
-            {"text": "NeuralVerse AI", "type": "ORG", "confidence": 0.95},
+            {"text": "MedMind AI", "type": "ORG", "confidence": 0.95},
             {"text": "Viken Parikh", "type": "PERSON", "confidence": 0.92},
             {"text": "2024", "type": "DATE", "confidence": 0.88}
         ]
@@ -215,13 +215,13 @@ class NeuralVerseAIServices:
     
     async def _optical_character_recognition(self, image_data: Any) -> Dict[str, Any]:
         """OCR text extraction"""
-        extracted_text = "NeuralVerse AI - The Ultimate AI Development Platform"
+        extracted_text = "MedMind AI - The Ultimate AI Development Platform"
         
         return {
             "extracted_text": extracted_text,
             "confidence": 0.94,
             "text_regions": [
-                {"text": "NeuralVerse AI", "bbox": [50, 50, 200, 80]},
+                {"text": "MedMind AI", "bbox": [50, 50, 200, 80]},
                 {"text": "Ultimate AI Development", "bbox": [50, 90, 250, 120]}
             ],
             "processing_time": "0.15s"
@@ -342,7 +342,7 @@ class NeuralVerseAIServices:
     
     async def _speech_recognition(self, audio_data: Any) -> Dict[str, Any]:
         """Speech-to-text conversion"""
-        transcribed_text = "Welcome to NeuralVerse AI, the ultimate AI development platform"
+        transcribed_text = "Welcome to MedMind AI, the ultimate AI development platform"
         
         return {
             "transcribed_text": transcribed_text,
@@ -454,7 +454,7 @@ class NeuralVerseAIServices:
     async def _image_generation(self, prompt: str) -> Dict[str, Any]:
         """AI image generation"""
         # Simulate image generation
-        image_url = f"https://api.neuralverse.ai/generated/{hash(prompt)}.png"
+        image_url = f"https://api.medmind.ai/generated/{hash(prompt)}.png"
         
         return {
             "image_url": image_url,
@@ -556,7 +556,7 @@ if __name__ == "__main__":
     def _extract_entities(self, text: str) -> List[Dict[str, Any]]:
         """Extract named entities from text"""
         return [
-            {"text": "NeuralVerse AI", "type": "ORG", "confidence": 0.95},
+            {"text": "MedMind AI", "type": "ORG", "confidence": 0.95},
             {"text": "Viken Parikh", "type": "PERSON", "confidence": 0.92},
             {"text": "2024", "type": "DATE", "confidence": 0.88}
         ]
@@ -598,4 +598,4 @@ if __name__ == "__main__":
         }
 
 # Initialize the AI services
-ai_services = NeuralVerseAIServices()
+ai_services = MedMindAIServices()

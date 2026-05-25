@@ -1,5 +1,5 @@
 """
-NeuralVerse AI - Pydantic Models and Schemas
+MedMind AI - Pydantic Models and Schemas
 Data models for all AI services and features
 """
 

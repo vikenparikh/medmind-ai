@@ -1,1 +1,1 @@
-# NeuralVerse AI Models Package
+# MedMind AI Models Package
