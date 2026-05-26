@@ -130,3 +130,6 @@ patient_data/
 *.csv
 *.xlsx
 *.json
+
+# Search-index artifacts (regenerable via .claude/scripts/build-rag.sh)
+.claude/rag/
