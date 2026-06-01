@@ -3,7 +3,7 @@
 > One-page context graph. Read this BEFORE reading anything else in this repo.
 > Rebuild with: `bash .claude/scripts/build-index.sh > .claude/INDEX.md`
 >
-> Generated 2026-05-25T20:16Z.
+> Generated 2026-05-28T22:41Z.
 
 ## About
 
@@ -29,7 +29,7 @@
 
 - Python: 27 files
 - Shell: 4 files
-- Markdown: 9 files
+- Markdown: 16 files
 
 ## Memory pointers
 
